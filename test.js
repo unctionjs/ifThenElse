@@ -1,7 +1,7 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type, no-magic-numbers */
 import {test} from "tap"
 
-import hammer from "./source"
+import ifThenElse from "./source"
 
 const toFloat = (value) => parseFloat(value)
 const toString = (value) => `${value}`
