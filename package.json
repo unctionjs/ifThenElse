@@ -1,6 +1,6 @@
 {
   "name": "@unction/ifthenelse",
-  "version": "2.8.0",
+  "version": "3.0.0",
   "description": "Based on a predicate it passes the value to a consequent or alternative function",
   "keywords": [
     "unction",
