@@ -1,13 +1,13 @@
-export default function ifThenElse (predicate: PredicateFunctionType): Function {
-  return function ifThenElsePredicate (consequent: UnaryFunctionType): Function {
-    return function ifThenElsePredicateConsequent (alternative: UnaryFunctionType): Function {
-      return function ifThenElsePredicateConsequentAlternative (value: mixed): mixed {
+export default function ifThenElse(predicate) {
+  return function ifThenElsePredicate(consequent) {
+    return function ifThenElsePredicateConsequent(alternative) {
+      return function ifThenElsePredicateConsequentAlternative(value) {
         if (predicate(value)) {
-          return consequent(value)
+          return consequent(value);
         }
 
-        return alternative(value)
-      }
-    }
-  }
+        return alternative(value);
+      };
+    };
+  };
 }
