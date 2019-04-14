@@ -1,26 +1,26 @@
 /* eslint-disable no-magic-numbers */
-import {test} from "tap"
+import {test} from "tap";
 
-import ifThenElse from "./index"
+import ifThenElse from "./index";
 
-const toFloat = (value) => parseFloat(value)
-const toString = (value) => `${value}`
-const isEven = (value) => value % 2 === 0
+const toFloat = (value) => parseFloat(value);
+const toString = (value) => `${value}`;
+const isEven = (value) => value % 2 === 0;
 
 test(({same, end}) => {
   same(
     ifThenElse(isEven)(toString)(toFloat)(1),
     1.0
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test(({same, end}) => {
   same(
     ifThenElse(isEven)(toString)(toFloat)(2),
     "2"
-  )
+  );
 
-  end()
-})
+  end();
+});
