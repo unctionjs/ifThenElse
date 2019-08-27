@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers */
 import {test} from "tap";
 
-import ifThenElse from "./index";
+import ifThenElse from "./";
 
 const toFloat = (value) => parseFloat(value);
 const toString = (value) => `${value}`;
