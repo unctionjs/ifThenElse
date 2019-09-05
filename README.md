@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> PredicateFunctionType => UnaryFunctionType => UnaryFunctionType => mixed
+> PredicateFunctionType<A> => MapperFunctionType<A, B> => MapperFunctionType<A, C> => B | C
 
 Based on a predicate it passes the value to a consequent or alternative function
 
