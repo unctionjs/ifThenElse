@@ -1,5 +1,5 @@
 /* eslint-disable no-magic-numbers */
-import ifThenElse from "./index.ts";
+import ifThenElse from "./index";
 
 const toFloat = (value) => parseFloat(value);
 const toString = (value) => `${value}`;
